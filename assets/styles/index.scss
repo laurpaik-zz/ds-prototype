@@ -1,2 +1,37 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import './colors';
+
+body,
+html {
+  background-color: $black;
+}
+
+.results {
+  color: $white;
+  height: 30px;
+}
+
+.information {
+  background-color: $pink;
+  height: 100vh;
+}
+
+.first-view {
+  height: 100vh;
+}
+
+.user-form {
+  // background-color: $white;
+  left: 50%;
+  margin-left: 33%;
+  margin-top: 30%;
+  top: 50%;
+
+  .input-box,
+  .submit-button {
+    background-color: $black;
+    color: $green;
+    position: relative;
+  }
+}
