@@ -1,9 +1,9 @@
 'use strict';
 
-const example = require('../assets/scripts/example');
+const commands = require('../assets/scripts/commands');
 
-describe('Example', function () {
+describe('Commands', function () {
   it('is true', function () {
-    expect(example).toBe(true);
+    expect(commands).toBe(true);
   });
 });
