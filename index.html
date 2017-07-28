@@ -12,15 +12,18 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <div class='first-view'>
-        <div class='results'></div>
-        <div class='user-input'>
-          <form class='user-form'>
-            <input type='text' class='input-box'>
-            <input type='submit' class='submit-button' placeholder="run">
-          </form>
+      <!-- <div class='container'> -->
+        <div class='container'>
+          <div class='instructions box box0'>Type `start` to start.</div>
+          <div class='box box1'>
+            <form class='user-form'>
+              <input type='text' class='input-box'>
+              <input type='submit' class='submit-button' placeholder="run">
+            </form>
+          </div>
+          <div class='results box box2 open-active'></div>
         </div>
-      </div>
-      <div class='information'></div>
+      <!-- </div> -->
+      <div class='information hidden' id='dsi'></div>
     </body>
 </html>
