@@ -1,2 +1,113 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import './colors';
+
+body,
+html {
+  background-color: $black;
+  font-family: "Courier";
+}
+
+.container {
+  // align-content: center;
+  // align-items: center;
+  border: 10px solid $white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+
+  .results {
+    border: 1px solid $green;
+    // align-items: center;
+    color: $white;
+    height: 30%;
+    // justify-content: center;
+    // height: 30px;
+    // width: 100%;
+  }
+
+  .input-box,
+  .submit-button {
+    background-color: $black;
+    border-color: $darker-green;
+    color: $green;
+  }
+
+  .instructions {
+    color: $green;
+  }
+}
+
+.box {
+  align-self: center;
+  // border: 10px solid $light-pink;
+  display: flex;
+  justify-content: center;
+  transition: transform .5s;
+  width: 75%;
+
+  .box > * {
+    flex: 1 0 auto;
+    // justify-content: center;
+  }
+}
+
+.box1 { transform: translateY(-50%); }
+.box0 { transform: translateY(-100%); }
+.box2 { transform: translateY(0%); }
+
+.results {
+  justify-content: flex-start;
+}
+
+.information {
+  background-color: $pink;
+  height: 100vh;
+}
+
+.input-box:focus {
+  outline: none;
+}
+
+p{
+  color: $lime;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+// ::selection{
+//   background: black;
+// }
