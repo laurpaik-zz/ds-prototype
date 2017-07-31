@@ -5,12 +5,10 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 body,
 html {
   background-color: $black;
-  font-family: "Courier";
+  font-family: 'Courier';
 }
 
 .container {
-  // align-content: center;
-  // align-items: center;
   border: 10px solid $white;
   display: flex;
   flex-direction: column;
@@ -20,12 +18,9 @@ html {
 
   .results {
     border: 1px solid $green;
-    // align-items: center;
     color: $white;
     height: 30%;
-    // justify-content: center;
-    // height: 30px;
-    // width: 100%;
+    overflow: scroll;
   }
 
   .input-box,
@@ -42,7 +37,6 @@ html {
 
 .box {
   align-self: center;
-  // border: 10px solid $light-pink;
   display: flex;
   justify-content: center;
   transition: transform .5s;
@@ -50,7 +44,6 @@ html {
 
   .box > * {
     flex: 1 0 auto;
-    // justify-content: center;
   }
 }
 
@@ -71,43 +64,7 @@ html {
   outline: none;
 }
 
-p{
+p {
   color: $lime;
   font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end);
 }
-
-p:nth-child(2){
-  animation: type2 8s steps(60, end);
-}
-
-p a{
-  color: lime;
-  text-decoration: none;
-}
-
-span{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{
-  from { width: 0; }
-}
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; }
-}
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-// ::selection{
-//   background: black;
-// }
