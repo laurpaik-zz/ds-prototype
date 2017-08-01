@@ -2,6 +2,7 @@
 import Typed from 'typed.js';
 
 const content = document.querySelector('.input-box');
+const dsi = $('#dsi');
 
 const resetResults = function () {
   $('.results').html('');
@@ -40,10 +41,19 @@ const submit = function (e) {
   }
 };
 
+const skipPreview = function (e) {
+  e.preventDefault();
+  $('html, body').stop().animate({
+    scrollTop: dsi.offset().top
+  }, 1000);
+};
+
 const addEventHandlers = () => {
   $('.user-form').on('submit', function () {
     submit(event);
-    console.log(content.value, 'CONTENT');
+  });
+  $('.skip-link').on('click', function () {
+    skipPreview(event);
   });
 };
 
