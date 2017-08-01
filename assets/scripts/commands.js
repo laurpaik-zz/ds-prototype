@@ -51,6 +51,7 @@ const skipPreview = function (e) {
 const addEventHandlers = () => {
   $('.user-form').on('submit', function () {
     submit(event);
+    $('span').addClass('hidden');
   });
   $('.skip-link').on('click', function () {
     skipPreview(event);
