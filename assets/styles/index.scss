@@ -18,7 +18,8 @@ html {
 
   .results {
     border: 1px solid $green;
-    color: $white;
+    color: $lime;
+    font-size: 20px;
     height: 30%;
     overflow: scroll;
   }
@@ -62,9 +63,4 @@ html {
 
 .input-box:focus {
   outline: none;
-}
-
-p {
-  color: $lime;
-  font-size: 20px;
 }
