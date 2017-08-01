@@ -50,19 +50,37 @@ html {
   }
 }
 
-.results {
-  justify-content: flex-start;
-}
-
-.information {
-  height: 100vh;
-}
-
 .skip {
   align-items: flex-end;
   justify-content: flex-end;
 }
 
-.input-box:focus {
-  outline: none;
+.information {
+  flex-direction: row;
+  height: 90vh;
+  justify-content: space-between;
+
+  .panel {
+    background-color: $black;
+    border: 1px solid $green;
+    overflow: scroll;
+    padding: inherit;
+    width: 30%;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .information {
+    flex-direction: column;
+    height: 100%;
+
+    .panel {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
