@@ -52,7 +52,12 @@ html {
 
 .skip {
   align-items: flex-end;
+  color: $darker-green;
   justify-content: flex-end;
+
+  .skip-link {
+    color: $lime;
+  }
 }
 
 .information {
