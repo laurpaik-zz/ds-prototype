@@ -8,6 +8,15 @@ html {
   font-family: 'Courier';
 }
 
+nav {
+  background-color: $transparent-green;
+  padding: 1em;
+
+  a {
+    padding: inherit;
+  }
+}
+
 .container {
   color: $lime;
   display: flex;
@@ -54,10 +63,6 @@ html {
   align-items: flex-end;
   color: $darker-green;
   justify-content: flex-end;
-
-  .skip-link {
-    color: $lime;
-  }
 }
 
 .information {
@@ -76,6 +81,16 @@ html {
       text-align: center;
     }
   }
+}
+
+a {
+  color: $lime;
+}
+
+a:hover {
+  background-color: $darker-green;
+  color: $black;
+  cursor: cell;
 }
 
 @media(max-width: 800px) {
