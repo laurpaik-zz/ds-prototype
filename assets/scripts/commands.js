@@ -61,9 +61,7 @@ const addEventHandlers = () => {
     submit(event);
     $('span').addClass('hidden');
   });
-  $('.skip-link').on('click', function () {
-    skipPreview(event);
-  });
+  $('.skip-link').on('click', skipPreview);
 };
 
 module.exports = {
