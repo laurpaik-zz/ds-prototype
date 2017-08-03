@@ -23,14 +23,17 @@ const submit = function (e) {
         strings: [startText],
         typeSpeed: 30,
       });
-      $('.instructions').html('Next step: &grave;why&grave;')
+      $('.instructions').html('Next step: &grave;why&grave;');
     break;
     case 'why':
       let why = new Typed(".results", {
         strings: [whyText],
         typeSpeed: 30,
       });
-      $('.instructions').html('Next step: &grave;graph&grave;')
+      $('.instructions').html('Next step: &grave;graph&grave;');
+    break;
+    case 'graph':
+      console.log('GRAPH');
     break;
     default:
       let mistake = new Typed(".results", {
